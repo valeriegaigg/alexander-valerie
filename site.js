@@ -14,8 +14,14 @@ function move() {
         main.classList.add('slide');
         flap.style.zIndex = 1;
         flap2.style.zIndex = 1;
-         envelope.style.zIndex = 10;
+        envelope.style.zIndex = 10;
     }, 1000);
+
+    setTimeout(() => {
+        show();
+    }, 4000);
+
+    
 
 
     
