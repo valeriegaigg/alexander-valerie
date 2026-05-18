@@ -20,10 +20,6 @@ function move() {
     setTimeout(() => {
         show();
     }, 4000);
-
-    
-
-
     
 }
 
