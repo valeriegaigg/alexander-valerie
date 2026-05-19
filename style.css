@@ -63,8 +63,7 @@ main{
 .monet{
   background-image: url("img/monet-2.jpg");
   background-size: cover;
-  padding: 20px 0px;
-  margin-top: 150px;
+  margin-top: 130px;
   margin-bottom: 100px;
   width: 100%;
 }
