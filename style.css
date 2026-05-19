@@ -1,22 +1,30 @@
 :root{
   --background: #f5f0eb;
   --text: #40352d;
-  --snell: "Snell Roundhand", cursive;
-  --tan: "TAN-Angleton-Regular";
-  --copper: "Copperplate", serif;
 }
-
-.font-snell {
+/* .font-copper {
+  font-family: var(--copper);
+  font-weight: 300;
+  font-style: normal;
+} */
+/* .font-snell {
   font-family: var(--snell);
+  font-weight: 400;
+  font-style: normal;
+} */
+.pinyon {
+  font-family: "Pinyon Script", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
-.font-copper {
-  font-family: var(--copper);
-  font-weight: 300;
+.forum {
+  font-family: "Forum", serif;
+  font-weight: 400;
   font-style: normal;
 }
+
+
 
 body{
   background-color: var(--background);
@@ -35,7 +43,7 @@ h1{
 }
 
 h2,h4{
-  margin: 8px;
+  margin: 6px;
 }
 
 main{
@@ -52,6 +60,28 @@ main{
   border-bottom: #b7a89d solid 1px;
 }
 
+.monet{
+  background-image: url("img/monet-2.jpg");
+  background-size: cover;
+  padding: 20px 0px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+#in-1{
+  position: relative;
+  top: -90px;
+  margin-right: 1%;
+}
+
+#in-2{
+  position: relative;
+  top: 90px;
+  margin-left: 1%;
+}
+
+
 
 /* @media (min-width: 500px){
  .center{
@@ -67,7 +97,7 @@ main{
 
 
 
-
+/* 
 .slide {
 	animation: slide 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
 }
@@ -84,10 +114,10 @@ main{
 .grow{
     animation: grow 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
    
-}
+} */
 
 
-
+/* 
 @keyframes slide {
   0% {
     transform: translateY(0);
@@ -107,13 +137,13 @@ main{
     transform: translateY(-420px) ;
     opacity: 100%;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     background-color: #b7a89d;
   }
-}
+} */
 
 
-@keyframes fade {
+/* @keyframes fade {
   0% {
     opacity: 100%;
   }
@@ -131,4 +161,4 @@ main{
     transform: rotateX(180deg) translateY(-12px);
     transform-origin: top;
   }
-}
+} */
