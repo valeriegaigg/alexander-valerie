@@ -95,13 +95,25 @@ a:hover{
   color: #b7a89d;
 }
 .rsvp{
-  width: 90%;
+  background-color: #f7eaeea0;
+  width: 85%;
   margin: 0 auto;
   line-height: 1.5em;
 }
-form{
-  border: #b7a89d solid 1px;
+.rsvp > h3{
+  margin: 0 auto;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  width: 80%;
+  border-bottom: #b7a89d solid 1px;
+}
+.rsvp-wrap{
+  background-image: url("img/flower.jpg");
+  background-size: cover;
   padding: 30px;
+}
+form{
+  padding: 10px;
   border-radius: 5px;
   width: 80%;
   text-align: left;
@@ -121,12 +133,13 @@ input{
 textarea{
   border: none;
   border-bottom: 1px solid var(--text);
-  background-color: var(--background);
+  background-color: #f7eaee47;
   font-family: "Forum", serif;
   font-size: 1.1em;
 }
 textarea:focus{
   outline: none;
+  background-color: none;
   border-bottom: 1px solid #b7a89d;
 }
 input[type="checkbox"]{
