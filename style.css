@@ -60,6 +60,13 @@ main{
   border-bottom: #b7a89d solid 1px;
 }
 
+.registry{
+  width:90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  line-height: 1.5em;
+}
+
 .monet{
   background-image: url('./img/monet-2.jpg');
   background-size: cover;
@@ -87,6 +94,69 @@ a{
 a:hover{
   color: #b7a89d;
 }
+.rsvp{
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+form{
+  border: #b7a89d solid 1px;
+  padding: 30px;
+  border-radius: 5px;
+  width: 80%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-items: center;
+  font-family: "Forum", serif;
+}
+label{
+  font-size: 1.1em;
+  margin: 20px 0px 5px 0px;
+}
+input{
+  margin-bottom: 10px;
+}
+textarea{
+  border: none;
+  border-bottom: 1px solid var(--text);
+  background-color: var(--background);
+  font-family: "Forum", serif;
+  font-size: 1.1em;
+}
+textarea:focus{
+  outline: none;
+  border-bottom: 1px solid #b7a89d;
+}
+input[type="checkbox"]{
+  width: auto;
+  margin: 0px 8px;
+}
+form div{
+  margin: 0 auto;
+}
+
+button{
+  width: 70%;
+  background-color: var(--text);
+  color: var(--background);
+  margin: 25px auto;
+  padding: 5px;
+  font-size: medium;
+  font-family: "Forum", serif;
+  border: none;
+  border-radius: 3px;
+}
+button:hover{
+  background-color: #b7a89d;
+  color: var(--text);
+}
+
+.text-sm{
+  font-size: 1em;
+}
+
 
 footer{
   height: 80px;

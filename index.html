@@ -27,10 +27,27 @@
             <img id="in-1" src="img/invite-1.JPG" width="45%">
              <img id="in-2" src="img/invite-2.JPG" width="45%">
         </div>
-        <div>
+        <div class="registry">
             <h1 class="pinyon">Registry</h1>
             <h3 class="forum">Alexander and Valerie are registered on Amazon, accessible through the link below:</h3>
             <a href="https://www.amazon.com/wedding/guest-view/1FX90VJ1V2QB9" target="_blank">Wedding Gift Registry</a>
+        </div>
+        <div class="rsvp">
+            <h1 class="pinyon">Rsvp</h1>
+            <h3 class="forum">Kindly respond by June 1st.</h3>
+            <form action="https://formspree.io/f/xaqkenvz" method="POST">
+                <div>
+                    <input type="checkbox" id="attend-yes" name="attend-yes" value="yes">
+                    <label for="attend-yes">Attending</label>
+
+                    <input type="checkbox" id="attend-no" name="attend-no" value="no">
+                    <label for="attend-no">Declining</label>
+                </div>
+                <label>Please list your name and any others you are rsvp'ing for:</label>
+                <textarea name="guestnames" required></textarea>
+                <h3 class="forum text-sm">Please reach out to Valerie at <a class="text-sm" href="tel:920-594-2351">920-594-2351</a> with any questions.</h3>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </main>
     <footer>
