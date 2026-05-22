@@ -35,7 +35,7 @@
         <div class="rsvp-wrap">
             <div class="rsvp">
             <h1 class="pinyon">Rsvp</h1>
-            <h3 class="forum">Kindly respond by June 1st.</h3>
+            <h3 class="forum">Kindly respond by June 8th.</h3>
             <form action="https://formspree.io/f/xaqkenvz" method="POST">
                 <div>
                     <input type="checkbox" id="attend-yes" name="attend-yes" value="yes">
@@ -58,3 +58,11 @@
     
 </body>
 </html>
+
+<script>
+    window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+</script>
