@@ -20,7 +20,7 @@
             <h3 class="forum">N495 Marten Rd, Fremont, WI 54940</h3>
         </div>
         <div>
-            <h3 class="forum">Ceremony at 4:30 PM | Venue open at 4:00</h3>
+            <h3 class="forum">Ceremony at 4:30 PM | Venue opens at 4:00</h3>
             <h3 class="forum">Dinner and reception to follow</h3>
         </div>
         <div class="monet">
@@ -37,15 +37,149 @@
             <h1 class="pinyon">Rsvp</h1>
             <h3 class="forum">Kindly respond by June 8th.</h3>
             <form action="https://formspree.io/f/xaqkenvz" method="POST">
-                <div>
+                <!-- <div>
                     <input type="checkbox" id="attend-yes" name="attend-yes" value="yes">
                     <label for="attend-yes">Attending</label>
-
                     <input type="checkbox" id="attend-no" name="attend-no" value="no">
                     <label for="attend-no">Declining</label>
                 </div>
                 <label>Please list your name and any others you are rsvp'ing for:</label>
-                <textarea name="guestnames" required></textarea>
+                <textarea name="guestnames" required></textarea> -->
+                <p class="forum text-sm">Select your attending guests:</p>
+                <div class="form-wrap">
+                    <div class="guestnames">
+                        <a onclick="showG()">Gaigg &#9662;</a>
+                        <div id="gaigg-list" >
+                            <input type="checkbox" id="" name="josh" value="josh">
+                            <label for="attend-yes">Joshua</label><br />
+                            <input type="checkbox" id="" name="ella" value="ella">
+                            <label for="attend-yes">Ella</label><br />
+                            <input type="checkbox" id="" name="rosalie" value="rosalie">
+                            <label for="attend-yes">Rosalie</label><br />
+                            <input type="checkbox" id="" name="jeremiah" value="jeremiah">
+                            <label for="attend-yes">Jeremiah</label><br />
+                        </div>
+                        <a onclick="showF()">Forrest &#9662;</a>
+                        <div id="forrest-list">
+                            <input type="checkbox" id="" name="kerry" value="kerry">
+                            <label for="attend-yes">Kerry</label><br />
+                            <input type="checkbox" id="" name="chad" value="chad">
+                            <label for="attend-yes">Chad</label><br />
+                            <input type="checkbox" id="" name="nicole" value="nicole">
+                            <label for="attend-yes">Nicole</label><br />
+                            <input type="checkbox" id="" name="samantha" value="samantha">
+                            <label for="attend-yes">Samantha</label><br />
+                            <input type="checkbox" id="" name="ian" value="ian">
+                            <label for="attend-yes">Ian</label><br />
+                        </div>
+                        <a onclick="showM()">Martin &#9662;</a>
+                        <div id="martin-list">
+                            <input type="checkbox" id="" name="joey" value="joey">
+                            <label for="attend-yes">Joey</label><br />
+                            <input type="checkbox" id="" name="taylor" value="taylor">
+                            <label for="attend-yes">Taylor</label><br />
+                            <input type="checkbox" id="" name="eden" value="eden">
+                            <label for="attend-yes">Eden</label><br />
+                        </div>
+                        <a onclick="showR()">Rodeghier/Wendt&#9662;</a>
+                        <div id="rodeghier-list">
+                            <input type="checkbox" id="" name="jason" value="jason">
+                            <label for="attend-yes">Jason</label><br />
+                            <input type="checkbox" id="" name="kelly" value="kelly">
+                            <label for="attend-yes">Kelly</label><br />
+                            <input type="checkbox" id="" name="ryan" value="ryan">
+                            <label for="attend-yes">Ryan</label><br />
+                            <input type="checkbox" id="" name="douglas" value="douglas">
+                            <label for="attend-yes">Douglas</label><br />
+                            <input type="checkbox" id="" name="tammy" value="tammy">
+                            <label for="attend-yes">Tammy</label><br />
+                            <input type="checkbox" id="" name="claire" value="claire">
+                            <label for="attend-yes">Claire</label><br />
+                            <input type="checkbox" id="" name="ammy" value="ammy">
+                            <label for="attend-yes">Ammy</label>
+                        
+                        </div>
+                        <a onclick="showT()">Tabbert &#9662;</a>
+                        <div id="tabbert-list">
+                            <input type="checkbox" id="" name="josh" value="josh">
+                            <label for="attend-yes">Josh</label><br />
+                            <input type="checkbox" id="" name="jenny" value="jenny">
+                            <label for="attend-yes">Jenny</label><br />
+                            <input type="checkbox" id="" name="isaiah" value="isaiah">
+                            <label for="attend-yes">Isaiah</label><br />
+                            <input type="checkbox" id="" name="noah" value="noah">
+                            <label for="attend-yes">Noah</label><br />
+                            <input type="checkbox" id="" name="sam" value="sam">
+                            <label for="attend-yes">Sam</label><br />
+                            <input type="checkbox" id="" name="ben" value="ben">
+                            <label for="attend-yes">Ben</label><br />
+                        </div>
+                        <a onclick="showMa()">Marsh &#9662;</a>
+                        <div id="marsh-list">
+                            <input type="checkbox" id="" name="michael" value="michael">
+                            <label for="attend-yes">Michael</label><br />
+                            <input type="checkbox" id="" name="andrea" value="andrea">
+                            <label for="attend-yes">Andrea</label><br />
+                            <input type="checkbox" id="" name="emma" value="emma">
+                            <label for="attend-yes">Emma</label><br />
+                            <input type="checkbox" id="" name="annabelle" value="annabelle">
+                            <label for="attend-yes">Annabelle</label><br />
+                        </div>
+                        <a onclick="showS()">Saldanha &#9662;</a>
+                        <div id="saldanha-list">
+                            <input type="checkbox" id="" name="pedro" value="pedro">
+                            <label for="attend-yes">Pedro</label><br />
+                            <input type="checkbox" id="" name="becca" value="becca">
+                            <label for="attend-yes">Becca</label><br />
+                        </div>
+                        <a onclick="showB()">Berry &#9662;</a>
+                        <div id="berry-list">
+                            <input type="checkbox" id="" name="xander" value="xander">
+                            <label for="attend-yes">Xander</label><br />
+                            <input type="checkbox" id="" name="emily" value="emily">
+                            <label for="attend-yes">Emily</label><br />
+                            <input type="checkbox" id="" name="selah" value="selah">
+                            <label for="attend-yes">Selah</label><br />
+                        </div>
+                        <a onclick="showD()">Dorn &#9662;</a>
+                        <div id="dorn-list">
+                            <input type="checkbox" id="" name="weston" value="weston">
+                            <label for="attend-yes">Weston</label><br />
+                            <input type="checkbox" id="" name="sophia" value="sophia">
+                            <label for="attend-yes">Sophia</label><br />
+                            <input type="checkbox" id="" name="luca" value="luca">
+                            <label for="attend-yes">Luca</label><br />
+                        </div>
+                        <a onclick="showV()">Van Ekeren &#9662;</a>
+                        <div id="van-ekeren-list">
+                            <input type="checkbox" id="" name="logan" value="logan">
+                            <label for="attend-yes">Logan</label><br />
+                            <input type="checkbox" id="" name="lexi" value="lexi">
+                            <label for="attend-yes">Lexi Hilt</label><br />
+                        </div>
+                        <a onclick="showN()">Nieto &#9662;</a>
+                        <div id="nieto-list">
+                            <input type="checkbox" id="" name="sebastion" value="sebastion">
+                            <label for="attend-yes">Sebastion</label><br />
+                        </div>
+                        <a onclick="showDe()">Denu &#9662;</a>
+                        <div id="denu-list">
+                            <input type="checkbox" id="" name="jeff" value="jeff">
+                            <label for="attend-yes">Jeff</label><br />
+                            <input type="checkbox" id="" name="amanda" value="amanda">
+                            <label for="attend-yes">Amanda</label><br />
+                        </div>
+                        <a onclick="showH()">Hawley &#9662;</a>
+                        <div id="hawley-list">
+                            <input type="checkbox" id="" name="skylar" value="skylar">
+                            <label for="attend-yes">Skylar</label><br />
+                            <input type="checkbox" id="" name="keeley" value="keeley">
+                            <label for="attend-yes">Keeley</label><br />
+                        </div>
+                    </div>
+                </div>
+
+
                 <h3 class="forum text-sm">Please reach out to Valerie at <a class="text-sm" href="tel:920-594-2351">920-594-2351</a> with any questions.</h3>
                 <button type="submit">Send</button>
             </form>
@@ -69,9 +203,6 @@
            <h3 class="forum text-sm">Feel free to take part in our color scheme, or wear what suits you best!</h3>
         </div>
     </main>
-    <footer>
-
-    </footer>
-    
+    <footer></footer>
 </body>
 </html>

@@ -91,21 +91,25 @@ a{
   color: var(--text);
   font-family: "Forum", serif;
 }
-a:hover{
-  color: #ad9e93;
-}
+
 .rsvp{
-  background-color: #f7eaeea0;
+  background-color: #f7eaeea9;
   width: 100%;
   margin: 0 auto;
   line-height: 1.5em;
 }
 .rsvp > h3{
   margin: 0 auto;
-  line-height: 1.7em;
-  margin-bottom: 10px;
+  line-height: 1.5em;
+  margin-bottom: 0px;
   width: 80%;
   border-bottom: #b7a89d solid 1px;
+}
+.rsvp div a{
+  font-size: 1.2em;
+  margin: 8px;
+  width: 100%;
+  cursor: pointer;
 }
 .rsvp-wrap{
   background-image: url("img/flower.jpg");
@@ -113,7 +117,6 @@ a:hover{
   padding: 30px;
 }
 form{
-  padding: 10px;
   border-radius: 5px;
   width: 80%;
   text-align: left;
@@ -123,32 +126,41 @@ form{
   justify-items: center;
   font-family: "Forum", serif;
 }
+
+.form-wrap{
+  display: flex;
+}
+
+.guestnames{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 10px;
+  width: 100%;
+  
+}
+.guestnames div{
+  text-align: left;
+  margin: 0 auto;
+}
+
+
 label{
-  font-size: 1.1em;
-  margin: 20px 0px 5px 0px;
+  width: 100%;
+  font-size: 1.2em;
 }
 input{
-  margin-bottom: 10px;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
 }
-textarea{
-  height: 60px;
-  border: none;
-  border-bottom: 1px solid var(--text);
-  background-color: #f7eaee47;
-  font-family: "Forum", serif;
-  font-size: 1.1em;
-}
-textarea:focus{
-  outline: none;
-  background-color: none;
-  border-bottom: 1px solid #b7a89d;
-}
+
 input[type="checkbox"]{
-  width: auto;
+  width: 25px;
   margin: 0px 8px;
 }
 form div{
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 button{
